@@ -4,6 +4,7 @@
 <%@page import="model.*"%>
 <%@page import="java.util.*"%>
 <%@page import="java.sql.*"%>
+<%@ include file="header.html" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,6 +49,6 @@
 		<button type="submit">Add Player</button>
 		<a href="index.jsp">Go Back</a>
 	</form>
-
+<%@ include file="footer.html" %> 
 </body>
 </html>

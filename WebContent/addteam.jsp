@@ -12,7 +12,6 @@
 	display: inline;
 }
 
-
 </style>
 </head>
 <body style="text-align: center;">
@@ -29,6 +28,6 @@
 		<button type="submit">Add Team</button>
 		<a href="index.jsp">Go Back</a>
 	</form>
-
+<%@ include file="footer.html" %> 
 </body>
 </html>
