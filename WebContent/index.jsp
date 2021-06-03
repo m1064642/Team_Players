@@ -5,7 +5,7 @@
 <%@page import="java.util.*"%>
 <%@page import="java.sql.*"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 <script
@@ -36,11 +36,11 @@
 </head>
 <body style="text-align: center;">
 
+ 
+  <%@ include file="header.html" %> 
+
 	<h1>Welcome to Academy</h1>
 
-
-	<button onclick="register()">Register new Player</button>
-	<button onclick="addTeam()">Add new team</button>
 	<br>
 	<br>
 	<br>
@@ -63,6 +63,7 @@
 	<div id="players"
 		style="text-align: center; margin-left: auto; margin-right: auto; width: 95%;">
 		<table id="table_id" class="styled-table">
+		<caption></caption>
 			<%
 				PlayerServices service = new PlayerServices();
 			List<Player> sList = new ArrayList<Player>();

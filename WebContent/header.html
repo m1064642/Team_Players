@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial;
+}
+
+.header {
+	overflow: hidden;
+	background-color: gray;
+	padding: 20px 10px;
+}
+
+.header a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 25px;
+	line-height: 25px;
+	border-radius: 5px;
+}
+
+.header a.logo {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.header a:hover {
+	background-color: grey;
+	color: black;
+}
+
+.headera.active {
+	background-color: green;
+	color: white;
+}
+
+.header-right {
+	float: right;
+}
+
+#about {
+	display: none;
+}
+
+@media screen and (max-width: 500px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.header-right {
+		float: none;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="header">
+		<a href="index.jsp" class="logo">Sports Academy</a>
+		<div class="header-right">
+			<a class="active" href="addteam.jsp">Add Team</a> 
+			<a href="addPlayer.jsp">Add Player</a> 
+			<a id="about" href="#about" >About Us</a>
+		</div>
+	</div>
+	<div style="padding-left: 20px"></div>
+</body>
+</html>

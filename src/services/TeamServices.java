@@ -19,7 +19,8 @@ public class TeamServices {
 
 	public int addTeam(Team team) throws DbException {
 
-		int result = dao.insert(team);
+		int result =0;
+		result = dao.insert(team);
 
 		if (result == 0) {
 			throw new DbException("Team Id Already exist");
