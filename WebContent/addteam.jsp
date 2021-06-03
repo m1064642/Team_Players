@@ -17,6 +17,7 @@
 </head>
 <body style="text-align: center;">
 <%@ include file="header.html" %> 
+
 	<h1>Add new Team</h1>
 	<form action="newteam" method="post" style="box-sizing: content-box;">
 
